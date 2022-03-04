@@ -1,0 +1,16 @@
+import tkinter as tk
+
+
+root = tk.Tk()
+
+canvas = tk.Canvas(root, width= 600, height=300 )
+canvas.grid(columnspan=3)
+
+#start button
+start_text = tk.StringVar()
+start_btn = tk.Button(root,textvariable=start_text)
+start_text.set("Start")
+start_btn.grid(columnspan=3, column=0, row=1)
+
+
+root.mainloop()
